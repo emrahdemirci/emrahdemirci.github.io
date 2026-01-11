@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikasi - Pill Scan</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --text-color: #333;
+            --bg-color: #fff;
+            --secondary-bg: #f5f5f5;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .language-switcher {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-switcher a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 5px 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .language-switcher a:hover, .language-switcher a.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        .highlight-box {
+            background: var(--secondary-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        a {
+            color: var(--primary-color);
+        }
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+        .contact-info {
+            background: var(--secondary-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <a href="pillscan.html">English</a>
+        <a href="pillscan-tr.html" class="active">Turkce</a>
+    </div>
+
+    <h1>Gizlilik Politikasi</h1>
+    <p class="last-updated">Son guncelleme: Ocak 2025</p>
+
+    <p>Pill Scan ("biz", "bizim" veya "bize") Pill Scan mobil uygulamasini ("Uygulama") isletmektedir. Bu Gizlilik Politikasi, Uygulamamizi kullandiginizda kisisel bilgilerinizi nasil topladigimizi, kullandigimizi, sakladigimizi ve korudugumuz aciklamaktadir.</p>
+
+    <h2>1. Topladigimiz Bilgiler</h2>
+
+    <h3>1.1 Hesap Bilgileri</h3>
+    <ul>
+        <li>E-posta adresi (hesap olusturma ve kimlik dogrulama icin)</li>
+        <li>Google veya Apple ile Giris kimlik dogrulama verileri (kullanilirsa)</li>
+    </ul>
+
+    <h3>1.2 Ilac Verileri</h3>
+    <ul>
+        <li>Ilac adlari, dozaj formlari ve miktarlar</li>
+        <li>Son kullanma tarihleri</li>
+        <li>Barkodlar (tarandiginda)</li>
+        <li>Ozel etiketler ve notlar</li>
+        <li>Ilac programlari ve uyum kayitlari</li>
+    </ul>
+
+    <h3>1.3 Teknik Veriler</h3>
+    <ul>
+        <li>Cihaz tipi ve isletim sistemi</li>
+        <li>Uygulama kullanim analitigi (anonimlestirilmis)</li>
+        <li>Cokme raporlari ve hata gunlukleri</li>
+    </ul>
+
+    <h2>2. Bilgilerinizi Nasil Kullaniyoruz</h2>
+    <p>Bilgilerinizi su amaclarla kullaniyoruz:</p>
+    <ul>
+        <li>Uygulamanin islevselligini saglamak ve surdurmek</li>
+        <li>Son kullanma uyarilari ve ilac hatirlaticlari gondermek</li>
+        <li>Verilerinizi cihazlar arasinda senkronize etmek</li>
+        <li>Uygulama performansini ve kullanici deneyimini iyilestirmek</li>
+        <li>Destek taleplerine yanit vermek</li>
+    </ul>
+
+    <div class="highlight-box">
+        <strong>Yapmadigimiz seyler:</strong>
+        <ul>
+            <li>Kisisel verilerinizi ucuncu taraflara satmak</li>
+            <li>Ilac verilerinizi reklamcilarla paylasmak</li>
+            <li>Saglik verilerinizi pazarlama amaciyla kullanmak</li>
+        </ul>
+    </div>
+
+    <h2>3. Veri Depolama ve Guvenlik</h2>
+
+    <h3>3.1 Bulut Depolama</h3>
+    <p>Verileriniz Supabase bulut altyapisinda guvenli bir sekilde saklanir:</p>
+    <ul>
+        <li>Tum veriler aktarim sirasinda sifrelenir (TLS/SSL)</li>
+        <li>Bekleyen veriler AES-256 sifreleme ile korunur</li>
+        <li>Satir duzeyinde guvenlik, yalnizca kendi verilerinize erismenizi saglar</li>
+        <li>Sunucular guvenli veri merkezlerinde bulunur</li>
+    </ul>
+
+    <h3>3.2 Yerel Depolama</h3>
+    <p>Bazi veriler cevrimdisi erisim icin cihazinizda yerel olarak onbellege alinir:</p>
+    <ul>
+        <li>Yerel veriler sifreli uygulama deposunda saklanir</li>
+        <li>Cikis yaptiginizda veriler silinir</li>
+    </ul>
+
+    <h2>4. Veri Paylasimi</h2>
+    <p>Verilerinizi yalnizca asagidaki durumlarda paylasabiliriz:</p>
+    <ul>
+        <li><strong>Hizmet Saglayicilar:</strong> Uygulamayi isletmek icin Supabase (bulut altyapisi) ve Firebase (analitik/bildirimler) ile</li>
+        <li><strong>Yasal Gereklilikler:</strong> Yasalarin gerektirdigi durumlarda veya haklarimizi korumak icin</li>
+        <li><strong>Izninizle:</strong> Veri paylasmaya acikca onay verirseniz</li>
+    </ul>
+
+    <h2>5. Haklariniz</h2>
+    <p>Su haklara sahipsiniz:</p>
+    <ul>
+        <li><strong>Erisim:</strong> Hakkinda sakladigimiz tum kisisel verileri goruntulemek</li>
+        <li><strong>Disa Aktarma:</strong> Ilac verilerinizi indirmek (PDF veya CSV)</li>
+        <li><strong>Duzeltme:</strong> Bilgilerinizi guncellemek veya duzeltmek</li>
+        <li><strong>Silme:</strong> Hesabinizi ve ilgili tum verileri silmek</li>
+        <li><strong>Tasinabilirlik:</strong> Verilerinizi tasinabilir bir formatta almak</li>
+    </ul>
+    <p>Bu haklari kullanmak icin asagidaki e-posta adresinden bize ulasin veya uygulama ici veri disa aktarma ozelligini kullanin.</p>
+
+    <h2>6. Veri Saklama</h2>
+    <ul>
+        <li>Hesabiniz aktif oldugu surece verileriniz saklanir</li>
+        <li>Hesap silme isleminden sonra, tum kisisel veriler 30 gun icinde kalici olarak silinir</li>
+        <li>Anonimlestirilmis analitik veriler hizmet iyilestirme icin saklanabilir</li>
+    </ul>
+
+    <h2>7. Cocuklarin Gizliligi</h2>
+    <p>Uygulama 13 yasindan kucuk cocuklar icin tasarlanmamistir. 13 yasindan kucuk cocuklardan bilerek kisisel bilgi toplamiyoruz.</p>
+
+    <h2>8. Ucuncu Taraf Hizmetleri</h2>
+    <p>Uygulama asagidaki ucuncu taraf hizmetlerini kullanir:</p>
+    <ul>
+        <li><strong>Supabase:</strong> Veritabani ve kimlik dogrulama (<a href="https://supabase.com/privacy">Gizlilik Politikasi</a>)</li>
+        <li><strong>Google ile Giris:</strong> Kimlik dogrulama (<a href="https://policies.google.com/privacy">Gizlilik Politikasi</a>)</li>
+        <li><strong>Apple ile Giris:</strong> Kimlik dogrulama (<a href="https://www.apple.com/legal/privacy/">Gizlilik Politikasi</a>)</li>
+        <li><strong>Firebase:</strong> Analitik ve push bildirimleri (<a href="https://firebase.google.com/support/privacy">Gizlilik Politikasi</a>)</li>
+    </ul>
+
+    <h2>9. Bu Politikadaki Degisiklikler</h2>
+    <p>Bu Gizlilik Politikasini zaman zaman guncelleyebiliriz. Onemli degisiklikleri Uygulama araciligiyla veya e-posta ile size bildireceğiz. Degisikliklerden sonra Uygulamayi kullanmaya devam etmeniz, guncellenmis politikayi kabul ettiginiz anlamina gelir.</p>
+
+    <h2>10. Iletisim</h2>
+    <div class="contact-info">
+        <p>Bu Gizlilik Politikasi veya kisisel verileriniz hakkinda sorulariniz varsa, bize ulasin:</p>
+        <p><strong>E-posta:</strong> support@pillscan.app</p>
+    </div>
+
+    <hr>
+
+    <h2>KVKK Uyumlulugu</h2>
+    <p>6698 sayili Kisisel Verilerin Korunmasi Kanunu (KVKK) kapsaminda:</p>
+
+    <h3>Veri Sorumlusu</h3>
+    <p>Pill Scan uygulamasi, kisisel verilerinizin islenmesinden sorumlu veri sorumlusudur.</p>
+
+    <h3>Isleme Amaclari</h3>
+    <p>Kisisel verileriniz asagidaki amaclarla islenmektedir:</p>
+    <ul>
+        <li>Ilac takibi ve son kullanma tarihi hatirlama hizmeti sunmak</li>
+        <li>Ilac hatirlaticlari gondermek</li>
+        <li>Cihazlar arasi senkronizasyon saglamak</li>
+        <li>Uygulama performansini iyilestirmek</li>
+    </ul>
+
+    <h3>Veri Paylasimi</h3>
+    <p>Verileriniz yalnizca hizmet saglayicilarla (Supabase, Firebase) paylasilmakta olup, ucuncu taraflara satilmamaktadir.</p>
+
+    <h3>KVKK Madde 11 Kapsamindaki Haklariniz</h3>
+    <ul>
+        <li>Kisisel verilerinizin islenip islenmedigini ogrenme</li>
+        <li>Islenmisse buna iliskin bilgi talep etme</li>
+        <li>Isleme amacini ve amacina uygun kullanilip kullanilmadigini ogrenme</li>
+        <li>Yurt icinde veya yurt disinda aktarildiği ucuncu kisileri ogrenme</li>
+        <li>Eksik veya yanlis islenmisse duzeltilmesini talep etme</li>
+        <li>KVKK Madde 7 kapsaminda silinmesini veya yok edilmesini talep etme</li>
+        <li>Duzeltme, silme veya yok etme islemlerinin ucuncu kisilere bildirilmesini talep etme</li>
+        <li>Analiz sonucu aleyhinize bir sonuc ortaya cikmasina itiraz etme</li>
+        <li>Kanuna aykiri islenmesi nedeniyle zarara ugramaniz halinde zararin giderilmesini talep etme</li>
+    </ul>
+
+    <h3>Basvuru</h3>
+    <p>KVKK kapsamindaki basvurulariniz icin mezidosoft@gmail.com adresine yazabilirsiniz.</p>
+
+    <hr>
+
+    <h2>GDPR Uyumlulugu (AB Kullanicilari)</h2>
+    <p>Genel Veri Koruma Yonetmeligi (GDPR) kapsaminda ek haklariniz vardir:</p>
+    <ul>
+        <li><strong>Yasal Dayanak:</strong> Verilerinizi onayiniza ve sozlesme zorunluluguna dayanarak isliyoruz</li>
+        <li><strong>Veri Sorumlusu:</strong> Pill Scan, kisisel bilgilerinizin veri sorumlusudur</li>
+        <li><strong>Itiraz Hakki:</strong> Islenmeye istediginiz zaman itiraz edebilirsiniz</li>
+        <li><strong>Sikayet Hakki:</strong> Yerel veri koruma otoritenize sikayet basvurusunda bulunabilirsiniz</li>
+    </ul>
+</body>
+</html>
