@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mola uygulamasının Türkçe ve İngilizce gizlilik politikası."
+    />
+    <meta name="theme-color" content="#123f2e" />
+    <title>Mola — Gizlilik Politikası / Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #123f2e;
+        --text: #17231d;
+        --muted: #607069;
+        --canvas: #f5f3eb;
+        --paper: #fffef9;
+        --mint: #dce9df;
+        --line: #dfe3dc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--canvas);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--ink);
+      }
+
+      .topbar {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        border-bottom: 1px solid rgba(18, 63, 46, 0.12);
+        background: rgba(245, 243, 235, 0.92);
+        backdrop-filter: blur(14px);
+      }
+
+      .topbar-inner,
+      main,
+      footer {
+        width: min(100% - 40px, 820px);
+        margin-inline: auto;
+      }
+
+      .topbar-inner {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--ink);
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .mark {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        grid-template-columns: repeat(2, 6px);
+        place-content: center;
+        gap: 6px;
+        border-radius: 13px;
+        background: var(--ink);
+      }
+
+      .mark span {
+        width: 6px;
+        height: 19px;
+        border-radius: 999px;
+        background: var(--mint);
+      }
+
+      .languages {
+        display: flex;
+        gap: 6px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--paper);
+      }
+
+      .languages button {
+        min-width: 48px;
+        padding: 8px 12px;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 750;
+      }
+
+      .languages button[aria-pressed="true"] {
+        background: var(--ink);
+        color: white;
+      }
+
+      main {
+        padding-block: 72px 56px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: #6c8277;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 680px;
+        margin: 0;
+        color: var(--ink);
+        font-size: clamp(40px, 8vw, 68px);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+      }
+
+      .updated {
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .intro {
+        margin: 46px 0 28px;
+        padding: 26px 28px;
+        border: 1px solid rgba(18, 63, 46, 0.1);
+        border-radius: 24px;
+        background: var(--mint);
+        color: var(--ink);
+        font-size: 18px;
+        font-weight: 650;
+      }
+
+      .policy section {
+        padding: 28px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .policy section:last-child {
+        border-bottom: 0;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        color: var(--ink);
+        font-size: 25px;
+        line-height: 1.25;
+        letter-spacing: -0.025em;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 9px;
+      }
+
+      .contact {
+        padding: 24px;
+        border-radius: 20px;
+        background: var(--ink);
+        color: white;
+      }
+
+      .contact h2 {
+        color: white;
+      }
+
+      .contact a {
+        color: var(--mint);
+        font-weight: 800;
+      }
+
+      footer {
+        padding-block: 0 48px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid #87af98;
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 540px) {
+        .topbar-inner,
+        main,
+        footer {
+          width: min(100% - 28px, 820px);
+        }
+
+        main {
+          padding-top: 48px;
+        }
+
+        .intro {
+          padding: 22px;
+        }
+      }
+
+      @media print {
+        .topbar {
+          position: static;
+        }
+
+        .languages {
+          display: none;
+        }
+
+        body {
+          background: white;
+        }
+
+        main {
+          padding-top: 36px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="Mola">
+          <span class="mark" aria-hidden="true"><span></span><span></span></span>
+          <span>mola</span>
+        </div>
+        <nav class="languages" aria-label="Dil / Language">
+          <button type="button" data-language="tr" aria-pressed="true">
+            TR
+          </button>
+          <button type="button" data-language="en" aria-pressed="false">
+            EN
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="policy" data-policy="tr">
+        <p class="eyebrow">Yasal ve gizlilik</p>
+        <h1>Gizlilik Politikası</h1>
+        <p class="updated">Son güncelleme: 26 Temmuz 2026</p>
+
+        <p class="intro">
+          Mola, uygulama kullanımına kişisel sınırlar koymaya ve ekran süresini
+          takip etmeye yardımcı olan bir Android uygulamasıdır. Mola hesap
+          oluşturmaz, reklam göstermez ve kullanıcı verilerini bir sunucuya
+          göndermez.
+        </p>
+
+        <section>
+          <h2>Erişilen bilgiler</h2>
+          <p>
+            Mola, temel özelliklerini sunabilmek için aşağıdaki bilgilere cihaz
+            üzerinde erişir:
+          </p>
+          <ul>
+            <li>
+              <strong>Yüklü uygulamalar:</strong> Kullanıcının sınır koyacağı
+              uygulamayı seçebilmesi için başlatılabilir uygulamaların adı ve
+              paket kimliği gösterilir.
+            </li>
+            <li>
+              <strong>Uygulama kullanım bilgileri:</strong> Seçilen
+              uygulamaların günlük ve son 7 günlük kullanım süresini hesaplamak
+              için Android Kullanım Erişimi kullanılır.
+            </li>
+            <li>
+              <strong>Ön plandaki seçili uygulama:</strong> Kullanıcının
+              belirlediği süre sınırını uygulamak ve süre dolduğunda mola
+              ekranını göstermek için Android Erişilebilirlik Hizmeti
+              kullanılır.
+            </li>
+            <li>
+              <strong>Kullanıcı tercihleri:</strong> Uygulama limitleri, mola
+              süreleri, mola sayıları ve Limit PIN'inin geri döndürülemez özeti
+              cihazda saklanır.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Erişilebilirlik Hizmeti</h2>
+          <p>
+            Mola'nın Erişilebilirlik Hizmeti yalnızca seçilen uygulamanın ön
+            planda olup olmadığını algılamak ve kullanıcının oluşturduğu süre
+            kurallarını uygulamak için çalışır.
+          </p>
+          <p>Mola bu hizmet aracılığıyla:</p>
+          <ul>
+            <li>Ekran içeriğini okumaz.</li>
+            <li>Kullanıcının yazdığı metinleri veya mesajları okumaz.</li>
+            <li>Şifre, ödeme veya iletişim bilgisi toplamaz.</li>
+            <li>Sistem ayarlarını değiştirmez.</li>
+            <li>
+              Bir uygulamanın devre dışı bırakılmasını veya kaldırılmasını
+              engellemez.
+            </li>
+          </ul>
+          <p>
+            Kullanıcı hizmeti Android ayarlarından istediği zaman kapatabilir.
+          </p>
+        </section>
+
+        <section>
+          <h2>Verilerin işlenmesi ve paylaşılması</h2>
+          <p>
+            Tüm bilgiler yalnızca kullanıcının cihazında işlenir ve saklanır.
+            Mola:
+          </p>
+          <ul>
+            <li>Kullanıcı verilerini geliştiriciye veya sunucuya iletmez.</li>
+            <li>
+              Kullanıcı verilerini üçüncü taraflarla paylaşmaz veya satmaz.
+            </li>
+            <li>Reklam, analiz ya da izleme SDK'sı kullanmaz.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Verilerin silinmesi</h2>
+          <p>
+            Kullanıcı, Android uygulama ayarlarından Mola'nın depolama alanını
+            temizleyerek veya uygulamayı kaldırarak cihazda tutulan tüm
+            kuralları, istatistikleri ve PIN bilgilerini silebilir.
+          </p>
+        </section>
+
+        <section>
+          <h2>İzinleri geri çekme</h2>
+          <p>
+            Kullanım Erişimi ve Erişilebilirlik Hizmeti Android sistem
+            ayarlarından istenildiği zaman kapatılabilir. Bu durumda ilgili
+            istatistik veya engelleme özellikleri çalışmaz; uygulamanın diğer
+            erişilebilir bölümleri kullanılabilir.
+          </p>
+        </section>
+
+        <section>
+          <h2>Çocukların gizliliği</h2>
+          <p>
+            Mola bir ebeveyn kontrolü uygulaması değildir ve bilerek çocuklardan
+            kişisel bilgi toplamaz.
+          </p>
+        </section>
+
+        <section>
+          <h2>Değişiklikler</h2>
+          <p>
+            Bu politika uygulamanın veri uygulamaları değiştiğinde
+            güncellenebilir. Güncel sürümün tarihi sayfanın başında belirtilir.
+          </p>
+        </section>
+
+        <section class="contact">
+          <h2>İletişim</h2>
+          <p>
+            Gizlilik politikası veya Mola'nın veri uygulamalarıyla ilgili
+            sorular için
+            <a href="mailto:mezidosoft@gmail.com">mezidosoft@gmail.com</a>
+            adresine ulaşabilirsiniz.
+          </p>
+        </section>
+      </article>
+
+      <article class="policy" data-policy="en" lang="en" hidden>
+        <p class="eyebrow">Legal and privacy</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: July 26, 2026</p>
+
+        <p class="intro">
+          Mola is an Android app that helps people set personal app-usage
+          limits and track screen time. Mola does not require an account,
+          display ads, or send user data to a server.
+        </p>
+
+        <section>
+          <h2>Information accessed</h2>
+          <p>
+            Mola accesses the following information on the device to provide
+            its core features:
+          </p>
+          <ul>
+            <li>
+              <strong>Installed apps:</strong> Names and package identifiers of
+              launchable apps are displayed so the user can choose which apps
+              to limit.
+            </li>
+            <li>
+              <strong>App usage information:</strong> Android Usage Access is
+              used to calculate today's and the last 7 days' usage for selected
+              apps.
+            </li>
+            <li>
+              <strong>Selected foreground app:</strong> Android
+              AccessibilityService is used to detect when a selected app is in
+              the foreground and to show the break screen when a user-defined
+              limit applies.
+            </li>
+            <li>
+              <strong>User preferences:</strong> App limits, break durations,
+              completed-break counts, and a non-reversible hash of the Limit
+              PIN are stored on the device.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>AccessibilityService</h2>
+          <p>
+            Mola's AccessibilityService works only to detect whether a selected
+            app is in the foreground and to apply the time rules created by the
+            user.
+          </p>
+          <p>Mola does not use this service to:</p>
+          <ul>
+            <li>Read screen content.</li>
+            <li>Read typed text or messages.</li>
+            <li>
+              Collect passwords, payment information, or contact information.
+            </li>
+            <li>Change system settings.</li>
+            <li>Prevent an app from being disabled or uninstalled.</li>
+          </ul>
+          <p>
+            The user can turn off the service at any time in Android settings.
+          </p>
+        </section>
+
+        <section>
+          <h2>Processing and sharing</h2>
+          <p>
+            All information is processed and stored only on the user's device.
+            Mola:
+          </p>
+          <ul>
+            <li>Does not send user data to the developer or a server.</li>
+            <li>Does not share or sell user data to third parties.</li>
+            <li>Does not use advertising, analytics, or tracking SDKs.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data deletion</h2>
+          <p>
+            The user can delete all rules, statistics, and PIN information
+            stored by Mola by clearing Mola's storage in Android app settings or
+            uninstalling the app.
+          </p>
+        </section>
+
+        <section>
+          <h2>Revoking access</h2>
+          <p>
+            Usage Access and AccessibilityService can be turned off at any time
+            in Android system settings. The related statistics or app-limiting
+            features will then stop working; other available parts of the app
+            can still be used.
+          </p>
+        </section>
+
+        <section>
+          <h2>Children's privacy</h2>
+          <p>
+            Mola is not a parental-control app and does not knowingly collect
+            personal information from children.
+          </p>
+        </section>
+
+        <section>
+          <h2>Changes</h2>
+          <p>
+            This policy may be updated when Mola's data practices change. The
+            effective date of the current version appears at the top of this
+            page.
+          </p>
+        </section>
+
+        <section class="contact">
+          <h2>Contact</h2>
+          <p>
+            For questions about this privacy policy or Mola's data practices,
+            contact
+            <a href="mailto:mezidosoft@gmail.com">mezidosoft@gmail.com</a>.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <span>© 2026 Mola</span>
+    </footer>
+
+    <script>
+      (() => {
+        const buttons = [...document.querySelectorAll("[data-language]")];
+        const policies = [...document.querySelectorAll("[data-policy]")];
+
+        function setLanguage(language, updateUrl = true) {
+          const next = language === "en" ? "en" : "tr";
+          document.documentElement.lang = next;
+          document.title =
+            next === "en"
+              ? "Mola — Privacy Policy"
+              : "Mola — Gizlilik Politikası";
+
+          buttons.forEach((button) => {
+            button.setAttribute(
+              "aria-pressed",
+              String(button.dataset.language === next),
+            );
+          });
+          policies.forEach((policy) => {
+            policy.hidden = policy.dataset.policy !== next;
+          });
+
+          if (updateUrl) {
+            const url = new URL(window.location.href);
+            url.searchParams.set("lang", next);
+            history.replaceState(null, "", url);
+          }
+        }
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            setLanguage(button.dataset.language);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        });
+
+        const requested = new URLSearchParams(window.location.search).get(
+          "lang",
+        );
+        const preferred =
+          requested ||
+          (navigator.language.toLowerCase().startsWith("tr") ? "tr" : "en");
+        setLanguage(preferred, false);
+      })();
+    </script>
+  </body>
+</html>
