@@ -1,1 +1,181 @@
-Emrah Demirci
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Emrah Demirci tarafından geliştirilen mobil ve web uygulamaları. Mola, Pill Scan, SnaxAI, Feraiz, Muhâsebât ve Amortisman.org ile tanışın." />
+    <meta name="theme-color" content="#f6f5f0" />
+    <title>Emrah Demirci — Mobil ve Web Uygulamaları</title>
+    <style>
+      :root { color-scheme: light; --paper: #f6f5f0; --ink: #252820; --muted: #65695d; --line: #dcded3; --accent: #b74627; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+      a { color: inherit; text-underline-offset: 4px; }
+      a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; border-radius: 3px; }
+      .wrap { width: min(1120px, calc(100% - 80px)); margin: auto; }
+      .skip { position: absolute; top: -100px; left: 20px; padding: 12px; background: var(--ink); color: white; z-index: 2; }
+      .skip:focus { top: 12px; }
+      header { min-height: 108px; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid var(--line); }
+      .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 16px; font-weight: 650; letter-spacing: -.4px; }
+      .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; background: var(--ink); color: var(--paper); border-radius: 50%; font-size: 12px; letter-spacing: -1px; }
+      nav { display: flex; gap: 30px; font-size: 13px; }
+      nav a { text-decoration: none; }
+      nav a:hover { color: var(--accent); }
+      .hero { position: relative; padding: 96px 0 83px; }
+      .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 28px; color: var(--muted); font-size: 11px; font-weight: 650; letter-spacing: 2px; text-transform: uppercase; }
+      .eyebrow::before { content: ""; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
+      h1 { max-width: 850px; margin: 0; font-size: clamp(44px, 6.3vw, 76px); line-height: 1.09; letter-spacing: -4px; font-weight: 550; }
+      h1 em { color: var(--accent); font-family: Georgia, serif; font-weight: 400; }
+      .intro { max-width: 560px; margin: 29px 0 30px; font-size: 17px; line-height: 1.8; color: var(--muted); }
+      .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 34px; padding: 16px 22px; border-radius: 6px; background: var(--ink); color: white; font-size: 13px; font-weight: 550; text-decoration: none; transition: background .2s; }
+      .button:hover { background: var(--accent); }
+      .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding-top: 25px; border-top: 1px solid var(--line); margin-bottom: 27px; }
+      .section-heading h2 { margin: 0; font-size: 21px; font-weight: 550; letter-spacing: -.6px; }
+      .section-heading span { color: var(--muted); font-size: 12px; }
+      .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 42px 20px; }
+      .project { min-width: 0; }
+      .art { height: 236px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 10px; position: relative; }
+      .art::before, .art::after { content: ""; position: absolute; border: 1px solid currentColor; border-radius: 50%; width: 210px; height: 210px; opacity: .1; }
+      .art::after { width: 290px; height: 290px; }
+      .mola { background: #e4e9dc; color: #526947; }
+      .pill { background: #e5e8f1; color: #666e9b; }
+      .snax { background: #f1e4d7; color: #a96039; }
+      .app-icon { width: 104px; height: 104px; object-fit: contain; border-radius: 23px; position: relative; z-index: 1; box-shadow: 0 12px 30px #25282016; }
+      .feraiz { background: #e3eae7; color: #447968; }
+      .muhasebat { background: #ebe5da; color: #8e754e; }
+      .amortisman { background: #e1e9f3; color: #385c8b; }
+      .web-symbol { position: relative; z-index: 1; display: grid; place-items: center; width: 104px; height: 104px; border-radius: 23px; background: #244b79; color: white; font-size: 56px; box-shadow: 0 12px 30px #25282016; }
+      .project-link { display: inline-flex; align-items: center; gap: 16px; margin-top: 18px; padding: 6px 0; font-size: 13px; font-weight: 550; text-decoration: none; }
+      .store-links { display: flex; flex-wrap: wrap; gap: 4px 22px; margin-top: 18px; }
+      .store-links .project-link { margin-top: 0; gap: 8px; }
+      .project-link:hover { color: var(--accent); text-decoration: underline; }
+      .project-meta { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 23px; }
+      .project h3 { font-size: 21px; letter-spacing: -.6px; font-weight: 600; margin: 0; }
+      .category { font-size: 10px; flex-shrink: 0; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+      .project p { margin: 13px 0 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+      .contact { margin: 76px 0 52px; padding: 33px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .contact h2 { font-size: 24px; font-weight: 550; letter-spacing: -.7px; margin: 0 0 10px; }
+      .contact p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.7; }
+      .contact a { font-size: 14px; white-space: nowrap; }
+      footer { padding-bottom: 30px; color: var(--muted); font-size: 12px; }
+      .footer-row { display: flex; justify-content: space-between; gap: 24px; align-items: baseline; }
+      .footer-row p { margin: 0; }
+      details { max-width: 600px; }
+      summary { cursor: pointer; width: fit-content; margin-left: auto; line-height: 1.8; }
+      summary:hover { color: var(--ink); }
+      .legal-links { padding: 18px 0 0; display: grid; gap: 13px; line-height: 1.7; }
+      .legal-links div { display: flex; flex-wrap: wrap; gap: 8px 14px; }
+      .legal-links strong { font-weight: 550; min-width: 115px; color: var(--ink); }
+      .legal-links a:hover { color: var(--accent); }
+      @media (max-width: 760px) {
+        .wrap { width: calc(100% - 40px); }
+        header { min-height: 86px; }
+        nav { gap: 18px; }
+        .hero { padding: 65px 0 60px; }
+        h1 { letter-spacing: -2.4px; }
+        .intro { font-size: 16px; }
+        .projects { grid-template-columns: 1fr; gap: 36px; }
+        .art { height: 240px; }
+        .project-meta { margin-top: 18px; }
+        .contact { margin-top: 56px; align-items: flex-start; flex-direction: column; }
+        .footer-row { flex-direction: column; gap: 20px; }
+        summary { margin-left: 0; }
+      }
+      @media (max-width: 380px) { .brand { font-size: 14px; gap: 7px; } nav { gap: 12px; font-size: 12px; } .section-heading span { display: none; } }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">İçeriğe geç</a>
+    <div class="wrap">
+      <header>
+        <a class="brand" href="./" aria-label="Emrah Demirci ana sayfa"><span class="brand-mark" aria-hidden="true">ed.</span>Emrah Demirci</a>
+        <nav aria-label="Ana menü"><a href="#uygulamalar">Uygulamalar</a><a href="#iletisim">İletişim</a></nav>
+      </header>
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="eyebrow">Bağımsız uygulama geliştiricisi</p>
+          <h1 id="hero-title">Günlük hayata<br />küçük bir <em>kolaylık.</em></h1>
+          <p class="intro">Merhaba, ben Emrah. Günlük ihtiyaçlara odaklanan, sade ve kullanışlı mobil ve web uygulamaları geliştiriyorum.</p>
+          <a class="button" href="#uygulamalar">Uygulamaları keşfet <span aria-hidden="true">↘</span></a>
+        </section>
+        <section id="uygulamalar" aria-labelledby="projects-title">
+          <div class="section-heading"><h2 id="projects-title">Uygulamalarım</h2><span>Günlük yaşam için tasarlandı</span></div>
+          <div class="projects">
+            <article class="project">
+              <div class="art mola" aria-hidden="true"><img class="app-icon" src="assets/icons/mola.png" alt="" width="104" height="104" loading="lazy" decoding="async" /></div>
+              <div class="project-meta"><h3>Mola</h3><span class="category">Dijital denge</span></div>
+              <p>Ekrana bir mola, kendine biraz zaman. Uygulama kullanımına kişisel sınırlar koy, ekran süreni takip et.</p>
+              <div class="store-links">
+                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.emrahdemirci.mola&amp;hl=tr" aria-label="Mola uygulamasını Google Play’de incele">Google Play <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project">
+              <div class="art pill" aria-hidden="true"><img class="app-icon" src="assets/icons/pillscan.png" alt="" width="104" height="104" loading="lazy" decoding="async" /></div>
+              <div class="project-meta"><h3>Pill Scan</h3><span class="category">İlaç takibi</span></div>
+              <p>İlaç bilgilerin bir arada. Barkodları tara, son kullanma tarihlerini ve ilaç hatırlatmalarını takip et.</p>
+              <div class="store-links">
+                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.medcab.medcab_app&amp;hl=tr" aria-label="Pill Scan uygulamasını Google Play’de incele">Google Play <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://apps.apple.com/tr/app/pill-scan-medicine-tracker/id6762099310" aria-label="Pill Scan uygulamasını App Store’da incele">App Store <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project">
+              <div class="art snax" aria-hidden="true"><img class="app-icon" src="assets/icons/snaxai.png" alt="" width="104" height="104" loading="lazy" decoding="async" /></div>
+              <div class="project-meta"><h3>SnaxAI</h3><span class="category">Besin keşfi</span></div>
+              <p>İçindekileri daha yakından tanı. Barkod ve içerik bilgileriyle ürünleri beslenme tercihlerine göre değerlendir.</p>
+              <div class="store-links">
+                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.mezidotech.nutriscanai&amp;hl=tr" aria-label="SnaxAI uygulamasını Google Play’de incele">Google Play <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://apps.apple.com/tr/app/snaxai-food-ingredients-scan/id6762063798" aria-label="SnaxAI uygulamasını App Store’da incele">App Store <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project">
+              <div class="art feraiz" aria-hidden="true"><img class="app-icon" src="assets/icons/feraiz.png" alt="" width="104" height="104" loading="lazy" decoding="async" /></div>
+              <div class="project-meta"><h3>Feraiz</h3><span class="category">Öğren & hesapla</span></div>
+              <p>İslami miras hukukunu öğren, dört mezhebe göre miras paylarını hesapla. Örneklerle bilgini pekiştir, dağılımı grafiklerle incele.</p>
+              <div class="store-links">
+                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.emrahdemirci.feraizPro&amp;hl=tr" aria-label="Feraiz uygulamasını Google Play’de incele">Google Play <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://apps.apple.com/tr/app/faraid-inheritance-calculator/id1577031741" aria-label="Feraiz uygulamasını App Store’da incele">App Store <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://faraid.net/" aria-label="Feraiz web sitesini ziyaret et">faraid.net <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project">
+              <div class="art muhasebat" aria-hidden="true"><img class="app-icon" src="assets/icons/muhasebat.jpg" alt="" width="104" height="104" loading="lazy" decoding="async" /></div>
+              <div class="project-meta"><h3>Muhâsebât</h3><span class="category">İslami hesaplamalar</span></div>
+              <p>Zekât, devir (ıskat-ı salât) ve hatim hesaplamalarını tek bir uygulamada, kolayca yap.</p>
+              <div class="store-links">
+                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.emrahdemirci.fazilethatim&amp;hl=tr" aria-label="Muhâsebât uygulamasını Google Play’de incele">Google Play <span aria-hidden="true">↗</span></a>
+                <a class="project-link" href="https://apps.apple.com/tr/app/muh%C3%A2seb%C3%A2t/id1563616623" aria-label="Muhâsebât uygulamasını App Store’da incele">App Store <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project">
+              <div class="art amortisman" aria-hidden="true"><span class="web-symbol">₺</span></div>
+              <div class="project-meta"><h3>Amortisman.org</h3><span class="category">Web uygulaması</span></div>
+              <p>Sabit kıymet takibi ve amortisman hesaplamaları bir arada. Dönemlerini yönet, amortisman tablolarını ve muhasebe fişlerini oluştur.</p>
+              <a class="project-link" href="https://amortisman.org/">amortisman.org’u keşfet <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </section>
+        <section class="contact" id="iletisim" aria-labelledby="contact-title">
+          <div><h2 id="contact-title">Bir merhaba ile başlayalım.</h2><p>Soruların, önerilerin veya uygulamalarla ilgili geri bildirimlerin için.</p></div>
+          <a href="mailto:mezidosoft@gmail.com">mezidosoft@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-row">
+          <p>© Emrah Demirci</p>
+          <details>
+            <summary>Gizlilik ve yasal bilgiler</summary>
+            <div class="legal-links">
+              <div><strong>Mola</strong><a href="mola_privacy_policy.html">Gizlilik / Privacy (TR · EN)</a></div>
+              <div><strong>Pill Scan</strong><a href="pillscan-tr.html" lang="tr">Gizlilik (TR)</a><a href="pillscan.html" lang="en">Privacy (EN)</a></div>
+              <div><strong>SnaxAI</strong><a href="snaxai_privacy_en.html" lang="en">Privacy (EN)</a><a href="snaxai_privacy_fr.html" lang="fr">Confidentialité (FR)</a></div>
+              <div><strong>Alfa Boss</strong><a href="alfaboss.html" lang="en">Privacy (EN)</a></div>
+              <div><strong>Pill Scan verileri</strong><a href="data-deletion-tr.html" lang="tr">Veri silme (TR)</a><a href="data-deletion.html" lang="en">Data deletion (EN)</a></div>
+            </div>
+          </details>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

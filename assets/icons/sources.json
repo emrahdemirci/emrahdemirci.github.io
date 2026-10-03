@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "mola",
+    "store_url": "https://play.google.com/store/apps/details?id=com.emrahdemirci.mola&hl=tr",
+    "title": "Mola: Ekran Süresi ve Odak - Google Play'de Uygulamalar",
+    "icon_source": "https://play-lh.googleusercontent.com/4aYkCZjNwRkg9ZyUoILtg51oeuZmM-1m6P2VDn3XCl0Ir2vu6F2JA9p6UFtC7fBiSpnB3mI8TeF_j5X5Pnq6zQ=s0-br30",
+    "local_path": "assets/icons/mola.png"
+  },
+  {
+    "slug": "pillscan",
+    "store_url": "https://play.google.com/store/apps/details?id=com.medcab.medcab_app&hl=tr",
+    "title": "İlaç Dolabı / Reçete Takip - Google Play'de Uygulamalar",
+    "icon_source": "https://play-lh.googleusercontent.com/umtFc0iZ29fDsgiRdJdZEzx7Ohe5BaEvCuyze2oaXh097952EKEMV06dtWIxd7bX-BqOiLcZs_CUnJjjkZUG=s0-br30",
+    "local_path": "assets/icons/pillscan.png"
+  },
+  {
+    "slug": "snaxai",
+    "store_url": "https://play.google.com/store/apps/details?id=com.mezidotech.nutriscanai&hl=tr",
+    "title": "SnaxAI - Food Ingredients Scan - Google Play'de Uygulamalar",
+    "icon_source": "https://play-lh.googleusercontent.com/_ZY6eiPLK0Y3foeOfGUD_RcPmML8YVYjQTrzpZraN13a3C_aE0EisOd0i7KmnUPID8KijzQEE1_4Nx6jFQmE8A=s0-br30",
+    "local_path": "assets/icons/snaxai.png"
+  },
+  {
+    "slug": "feraiz",
+    "store_url": "https://play.google.com/store/apps/details?id=com.emrahdemirci.feraizPro&hl=tr",
+    "title": "Feraiz - Öğren & Hesapla - Google Play'de Uygulamalar",
+    "icon_source": "https://play-lh.googleusercontent.com/5mg3HFCYSfXkavyKjNOmWnnpS1PMIsRQNpCbKRIqXN5MNexpsWhVzx3DSCiMkTUQAW6w2mQzXuz343hZETj_=s0-br30",
+    "local_path": "assets/icons/feraiz.png"
+  },
+  {
+    "slug": "muhasebat",
+    "store_url": "https://play.google.com/store/apps/details?id=com.emrahdemirci.fazilethatim&hl=tr",
+    "title": "Muhâsebât - Google Play'de Uygulamalar",
+    "icon_source": "https://play-lh.googleusercontent.com/Ui9KGLrOSkeoUABzoZsvDiVrnLBH4sVuEduvJgnALwyEIRSQ77ZvzNdKIDFz2YIi_gSzbYIhWAz5L9QMLfBX=s0-br30",
+    "local_path": "assets/icons/muhasebat.jpg"
+  }
+]
